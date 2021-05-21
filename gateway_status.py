@@ -3,7 +3,7 @@ import json
 import pytest
 import datetime
 
-
+@pytest.mark.office
 def test_gateway_api_status_200():
     response = requests.get("https://omrest.charter.orbiwise.com/omc/gateways/geo", auth=('charter_admin', 'Charter123@'))
     global response_body
